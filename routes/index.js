@@ -4,7 +4,7 @@ const router = express.Router();
 /* GET / */
 router.get('/', async (req, res, next) => {
     
-    res.render('lobby', { 
+    res.render('index', { 
         title: "Anit Human Card - Lobby",
     });
 });

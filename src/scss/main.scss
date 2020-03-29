@@ -1,15 +1,35 @@
 //Partials
 @import 'variables';
 @import 'mixins';
+@import 'layout';
 
 /* Main CSS file */
 body {
    margin: 0;
    padding: 0;
    font-family: $font-primary;
+
    color: $black;
    font-size: 14px;
    * {
       box-sizing: border-box;
+   }
+}
+
+main#home {
+   min-height: 100vh;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   .options {
+      display: flex;
+      .btn {
+         display: block;
+         &:last-child {
+            margin-left: 10px;
+         }
+      }
    }
 }

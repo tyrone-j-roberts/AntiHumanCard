@@ -9,7 +9,7 @@ const logger = require('morgan');
 const middleware = {}
 
 const routes = {
-   lobby: require('./routes/lobby')
+  index: require('./routes/index')
 }
 
 const app = express();
@@ -33,7 +33,7 @@ app.use(session({
 app.use(express.static(path.join(__dirname, 'public')));
 
 /* App Routes */
-app.use('/', routes.lobby);
+app.use('/', routes.index);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

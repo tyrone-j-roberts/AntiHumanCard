@@ -1,0 +1,35 @@
+a {
+  text-decoration: none; }
+
+.btn {
+  padding: 10px;
+  color: #ffffff;
+  background-color: #141E30; }
+  .btn.blue {
+    background-color: #0984e3; }
+  .btn.green {
+    background-color: #27ae60; }
+
+/* Main CSS file */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  color: #141E30;
+  font-size: 14px; }
+  body * {
+    box-sizing: border-box; }
+
+main#home {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main#home .options {
+    display: flex; }
+    main#home .options .btn {
+      display: block; }
+      main#home .options .btn:last-child {
+        margin-left: 10px; }
