@@ -1,0 +1,70 @@
+{
+   "name": "AntiHumanCard",
+   "version": "0.0.0",
+   "private": true,
+   "scripts": {
+      "start": "node bin/www"
+   },
+   "dependencies": {
+      "axios": "^0.19.0",
+      "babel-runtime": "^6.26.0",
+      "bcrypt": "^3.0.6",
+      "cookie-parser": "~1.4.3",
+      "debug": "~2.6.9",
+      "dotenv": "^8.1.0",
+      "ejs": "~2.5.7",
+      "express": "~4.16.0",
+      "express-session": "^1.16.2",
+      "http-errors": "~1.6.2",
+      "morgan": "~1.9.0",
+      "npm": "^6.10.3",
+      "qs": "^6.9.1",
+      "session-file-store": "^1.3.1",
+      "socket.io": "^2.3.0"
+   },
+   "devDependencies": {
+      "babel-core": "^6.26.3",
+      "babel-plugin-transform-runtime": "^6.23.0",
+      "babel-preset-env": "^1.7.0",
+      "babel-preset-es2015": "^6.24.1",
+      "babelify": "^8.0.0",
+      "browserify": "^16.5.0",
+      "gulp": "^3.9.1",
+      "gulp-babel": "^7.0.1",
+      "gulp-clean-css": "^4.2.0",
+      "gulp-concat": "^2.6.1",
+      "gulp-notify": "^3.2.0",
+      "gulp-rename": "^1.4.0",
+      "gulp-sass": "^4.0.2",
+      "gulp-sourcemaps": "^2.6.4",
+      "gulp-uglify": "^3.0.1",
+      "gulp-watch": "^5.0.1",
+      "node-sass": "^4.10.0",
+      "vinyl-buffer": "^1.0.1",
+      "vinyl-source-stream": "^2.0.0"
+   },
+   "nodemonConfig": {
+      "ignore": [
+         "public/**",
+         "src/**",
+         "sessions/**"
+      ],
+      "delay": "2500"
+   },
+   "babel": {
+      "plugins": [
+         [
+            "transform-runtime",
+            {
+               "helpers": false,
+               "polyfill": false,
+               "regenerator": true,
+               "moduleName": "babel-runtime"
+            }
+         ]
+      ],
+      "presets": [
+         "babel-preset-env"
+      ]
+   }
+}
