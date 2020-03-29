@@ -3,9 +3,8 @@ const router = express.Router();
 
 /* GET / */
 router.get('/', async (req, res, next) => {
-    
     res.render('index', { 
-        title: "Anit Human Card - Lobby",
+        title: "Anit Human Card",
     });
 });
 

@@ -2,8 +2,19 @@
 <main id="home">
    <h1>Anti Human Card</h1>
    <div class="options">
-      <a class="btn green" href="/game/new">New Game</a>
-      <a class="btn" href="/game/join">Join Game</a>
+      <button data-for="setup-new" class="btn green setup-btn">New Game</a>
+      <button data-for="setup-join" class="btn setup-btn">Join Game</a>
+   </div>
+   <div id="setup-new" class="setup">
+      <input type="text" id="new-nickname"  placeholder="Nickname" />
+      <button id="new-game" class="btn green">Create Server</button>
+      <button class="back-btn"><i class="fas fa-chevron-circle-left"></i> back</button> 
+   </div>
+   <div id="setup-join" class="setup">
+      <input type="text" id="join-code" placeholder="Game code" />
+      <input type="text" id="join-nickname"  placeholder="Nickname" />
+      <button id="join-game" class="btn">Join Game</button> 
+      <button class="back-btn"><i class="fas fa-chevron-circle-left"></i> back</button>
    </div>
 </main>
 <%- include('./partials/footer'); %>

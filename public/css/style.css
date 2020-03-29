@@ -1,14 +1,26 @@
 a {
   text-decoration: none; }
 
+.btn,
+input {
+  font-family: "Lato", sans-serif; }
+
 .btn {
   padding: 10px;
   color: #ffffff;
-  background-color: #141E30; }
+  background-color: #141E30;
+  border: 1px solid #141E30;
+  cursor: pointer; }
   .btn.blue {
-    background-color: #0984e3; }
+    background-color: #0984e3;
+    border-color: #0984e3; }
   .btn.green {
-    background-color: #27ae60; }
+    background-color: #27ae60;
+    border-color: #27ae60; }
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #999999; }
 
 /* Main CSS file */
 body {
@@ -29,7 +41,29 @@ main#home {
   align-items: center; }
   main#home .options {
     display: flex; }
-    main#home .options .btn {
+    main#home .options .setup-btn {
       display: block; }
-      main#home .options .btn:last-child {
+      main#home .options .setup-btn:last-child {
         margin-left: 10px; }
+    main#home .options.hide {
+      display: none; }
+  main#home .setup {
+    width: 90%;
+    max-width: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: none; }
+    main#home .setup #join-code {
+      margin-bottom: 10px;
+      width: 100%; }
+    main#home .setup button {
+      width: 40%;
+      margin-left: 10px; }
+      main#home .setup button.back-btn {
+        margin: 10px 0 0 0;
+        background: none;
+        border: none;
+        width: auto;
+        outline: none; }
+    main#home .setup.show {
+      display: flex; }

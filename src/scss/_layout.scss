@@ -2,14 +2,28 @@ a {
     text-decoration: none;
 }
 
+.btn,
+input {
+    font-family: $font-primary;
+}
+
 .btn {
     padding: 10px;
     color: $white;
     background-color: $black;
+    border: 1px solid $black;
+    cursor: pointer;
     &.blue {
         background-color: $blue;
+        border-color: $blue;
     }
     &.green {
         background-color: $green;
+        border-color: $green;
     }
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid $grey;
 }

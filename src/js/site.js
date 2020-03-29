@@ -1,1 +1,3 @@
-console.log("Anti Human Cards");
+const index = require('./index');
+
+index();

@@ -23,13 +23,43 @@ main#home {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+
    .options {
       display: flex;
-      .btn {
+      .setup-btn {
          display: block;
          &:last-child {
             margin-left: 10px;
          }
+      }
+      &.hide {
+         display: none;
+      }
+   }
+
+   .setup {
+      width: 90%;
+      max-width: 300px;
+      flex-wrap: wrap;
+      justify-content: center;
+      display: none;
+      #join-code {
+          margin-bottom: 10px;
+          width: 100%;
+      }
+      button {
+          width: 40%;
+          margin-left: 10px;
+          &.back-btn {
+             margin: 10px 0 0 0;
+             background: none;
+             border: none;
+             width: auto;
+             outline: none;
+          }
+      }
+      &.show {
+         display: flex;
       }
    }
 }
